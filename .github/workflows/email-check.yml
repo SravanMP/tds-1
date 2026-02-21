@@ -1,0 +1,16 @@
+name: Email Check Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 21f3000245@ds.study.iitm.ac.in
+        run: echo "Workflow executed successfully"
